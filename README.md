@@ -91,8 +91,12 @@ The frontend will start on **http://localhost:5173**
 ## Available Scripts
 
 ### Backend
-- `python main.py` - Start the FastAPI server
-- `python -m pytest` - Run tests
+cd backend
+source venv/bin/activate        # macOS/Linux
+# OR
+venv\Scripts\activate           # Windows
+
+uvicorn main:app --reload --host 0.0.0.0 --port 8000
 
 ### Frontend
 - `npm run dev` - Start development server
@@ -108,6 +112,9 @@ The frontend will start on **http://localhost:5173**
 - `GET /audits/high-risk` - Get high-risk audits
 
 (See http://localhost:8000/docs for complete API documentation)
+
+## Architecture Diagram 
+![Architecture Diagram](frontend/assets/architecture-diagram.svg)
 
 ## Troubleshooting
 
@@ -152,6 +159,22 @@ npm run dev -- --port 3000
 4. Commit with clear messages
 5. Push and create a pull request
 
-## License
 
-[Add your license here]
+## Demo Screenshots
+## Demo
+
+![Upload Contract and Invoice pdf](frontend/assets/Screenshot%202026-03-06%20122221.png)
+![Run the Audit](frontend/assets/Screenshot%202026-05-23%20202438.png)
+![Audit Result](frontend/assets/Screenshot%202026-05-23%20202457.png)
+![Audit Result Prameters](frontend/assets/Screenshot%202026-03-06%20143314.png)
+![price mismatch](frontend/assets/Screenshot%202026-05-23%20202539.png)
+![Audit Result](frontend/assets/Screenshot%202026-05-23%20202539.png)
+![Audit Result](frontend/assets/Screenshot%202026-05-23%20202559.png)
+![Audit Result Invoice data](frontend/assets/Screenshot%202026-05-23%20202626.png)
+![Audit Result contract data](frontend/assets/Screenshot%202026-05-23%20202617.png)
+
+![Audit Result Ask AI chatbot](frontend/assets/Screenshot%202026-05-23%20202640.png)
+
+Built At
+Women in Financial Services Agentic AI Hackathon (2025)
+Built and presented using AWS Bedrock, Strands Agents SDK, FastAPI, and React.
