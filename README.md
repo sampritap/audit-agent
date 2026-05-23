@@ -152,6 +152,3 @@ npm run dev -- --port 3000
 4. Commit with clear messages
 5. Push and create a pull request
 
-## License
-
-[Add your license here]
